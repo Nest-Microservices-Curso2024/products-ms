@@ -25,7 +25,7 @@ export class ProductsController {
    findAll( @Payload() paginationDto: PaginationDto) {
     
   
-    return this.productsService.findAll(paginationDto);
+    return this.productsService.findAll(paginationDto); 
 
     // return await this.productsService.findAll(paginationDto, showDeletedFlag);
   }
