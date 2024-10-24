@@ -11,7 +11,7 @@ const envsShema = joi.object({
 })
 .unknown(true);
 
-const { error, value } = envsShema.validate( process.env ) ;
+const { error, value } = envsShema.validate( process.env ) ; 
 if ( error ) {
  throw new Error(`Config validation error: ${ error.message}`);
 }
